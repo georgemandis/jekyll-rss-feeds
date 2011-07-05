@@ -1,0 +1,21 @@
+---
+layout: rss-feed
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+	<channel>
+		<title>{{ site.name }} - Links</title>
+		<description>{{ site.description }}</description>
+		<link>{{ site.url }}</link>
+		{% for post in site.posts %}
+			{% if post.link %}
+			<item>
+				<title>{{ post.title }}</title>
+				<description>{{ post.content | xml_escape }}</description>
+				<published>{{ post.date }}</published>
+				<link>{{ post.link | escape }}</link>
+			</item>
+			{% endif %}
+		{% endfor %}
+	</channel>
+</rss>

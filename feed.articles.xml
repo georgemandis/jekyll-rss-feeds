@@ -10,7 +10,7 @@ layout: rss-feed
 		{% for post in site.posts %}
 			{% unless post.link %}
 			<item>
-				<title>{% unless post.link %}☻ {% endunless %}{{ post.title }}</title>
+				<title>{{ post.title }}</title>
 				<description>{{ post.content | xml_escape }}</description>
 				<published>{{ post.date }}</published>
 				<link>{{ site.url }}{{ post.url }}</link>

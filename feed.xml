@@ -6,13 +6,13 @@ layout: rss-feed
 	<channel>
 		<title>{{ site.name }}</title>
 		<description>{{ site.description }}</description>
-		<link>{{ site.url }}</link>
+		<link>{{ site.url }}{{ site.baseurl }}</link>
 		{% for post in site.posts limit:10 %}
 			<item>
 				<title>{{ post.title }}</title>
 				<description>{{ post.content | xml_escape }}</description>
 				<published>{{ post.date }}</published>
-				<link>{{ site.url }}{{ post.url }}</link>
+				<link>{{ site.url }}{{ site.baseurl }}{{ post.url }}</link>
 			</item>
 		{% endfor %}
 	</channel>

@@ -6,7 +6,7 @@ layout: rss-feed
 	<channel>
 		<title>{{ site.name }} - Links</title>
 		<description>{{ site.description }}</description>
-		<link>{{ site.url }}</link>
+		<link>{{ site.url }}{{ site.baseurl }}</link>
 		{% for post in site.posts %}
 			{% if post.link %}
 			<item>

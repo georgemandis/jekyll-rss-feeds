@@ -26,7 +26,6 @@ These templates rely on a customized version of <code>\_config.yml</code>.  The 
 
 This makes it easy to reference the title, description and URL for your site in the feed templates using <code>{{ site.name }}</code>, <code>{{ site.description }}</code> and <code>{{ site.url }}</code>.  Even if you're not using these feed templates, you might find these variables useful when you're designing your layouts.
 
-About layouts
+Note on YAML Front Matter block
 ------
-You'll notice the files reference a layout called <code>rss-feed</code>.  This is simple dummy content for the Front Matter because it needs to have something in the layout field, otherwise it will render a blank page.
-
+The xml files contain a [YAML Front Matter](https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter) block with the line <code>layout: none</code>. This is necessary because Jekyll will not process a page with Liquid unless there is a YAML block at the top of the file.

@@ -31,3 +31,4 @@ Miscellany
 -----------
 - **Note on YAML Front Matter block**: The xml files contain a [YAML Front Matter](https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter) block with the line <code>layout: none</code>. This is necessary because Jekyll will not process a page with Liquid unless there is a YAML block at the top of the file.
 - **RSS Autodiscovery**: If your template is not already setup to do so, make sure the RSS feeds are discoverable by browsers, bots, etc: [rssboard.org/rss-autodiscovery](http://www.rssboard.org/rss-autodiscovery)
+- **Validation**: You can use the W3C Validator to make sure your feeds are formatted correctly: [http://validator.w3.org/feed/](http://validator.w3.org/feed/)

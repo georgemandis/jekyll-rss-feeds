@@ -1,5 +1,4 @@
 ---
-layout: none
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
@@ -11,7 +10,13 @@ layout: none
 		{% for post in site.categories.miscellaneous limit:10 %}
 			<item>
 				<title>{{ post.title | xml_escape }}</title>
-				<description>{{ post.content | xml_escape }}</description>
+				{% if post.excerpt %}
+					<description>{{ post.excerpt | xml_escape }}</description>
+				{% elsif post.description %}
+					<description>{{ post.content | xml_escape }}</description>
+				{% else %}
+					<description>{{ site.description | xml_escape }}</description>
+				{% endif %}
 				<pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
 				<link>{{ site.url }}{{ post.url }}</link>
 				<guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>

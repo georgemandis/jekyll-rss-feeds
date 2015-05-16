@@ -6,7 +6,7 @@ A few Liquid templates to use for rendering RSS feeds for your Jekyll blog.  Fea
 - **feed.xml** &mdash; Renders the 10 most recent posts.
 - **feed.category.xml** &mdash; Only renders posts for a specific category. This example renders posts for a "miscellaneous" category.
 - **feed.links.xml** &mdash; Only contains posts that link to external websites noted by a <code>link</code> variable in the [YAML Front Matter](https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter).  Not a common Jekyll convention, but a good way to generating a linked list.
-- **feed.articles.xml** &mdash; Only showing articles that don't link to external sites; The opposite of <code>feed.links.xml</code>.
+- **feed.articles.xml** &mdash; Only showing articles that don't link to external sites; The opposite of <code>feed.links.xml</code>
 
 How to use
 ----------

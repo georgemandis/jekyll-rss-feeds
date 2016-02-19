@@ -32,7 +32,7 @@ Miscellany
 - **Note on YAML Front Matter block**: The xml files contain an empty [YAML Front Matter](https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter) block. This is necessary because Jekyll will not process a page with Liquid unless there is a YAML block at the top of the file. Previously, this block contained the line <code>layout: none</code> but that was found to cause a separate issue for some: https://github.com/snaptortoise/jekyll-rss-feeds/commit/209b83b504fde14722491ea5d9753189566c8598
 - **RSS Autodiscovery**: If your template is not already setup to do so, make sure the RSS feeds are discoverable by browsers, bots, etc. by providing proper link tags to your Jekyll layout files (adapt `href` and `title` appropriately):
 
-    	<link href="/blog/feed.xml" type="application/atom+xml" rel="alternate" title="Latest 10 blog posts (atom)" />
+    	<link href="/blog/feed.xml" type="application/rss+xml" rel="alternate" title="Latest 10 blog posts (atom)" />
 
     Refer to [rssboard.org/rss-autodiscovery](http://www.rssboard.org/rss-autodiscovery) for details.
 - **Validation**: You can use the W3C Validator to make sure your feeds are formatted correctly: [http://validator.w3.org/feed/](http://validator.w3.org/feed/)

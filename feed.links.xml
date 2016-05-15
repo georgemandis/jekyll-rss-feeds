@@ -6,7 +6,7 @@
 		<title>{{ site.name | xml_escape }} - Links</title>
 		<description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
 		<link>{{ site.url }}</link>
-		<atom:link href="{{ site.url }}/feed.links.xml" rel="self" type="application/rss+xml" />
+		<atom:link href="{{ site.url }}/{{ page.path }}" rel="self" type="application/rss+xml" />
 		{% for post in site.posts %}
 			{% if post.link %}
 			<item>

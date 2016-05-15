@@ -6,7 +6,7 @@
 		<title>{{ site.name | xml_escape }} - Miscellaneous</title>
 		<description>Posts categorized as 'miscellaneous'</description>
 		<link>{{ site.url }}</link>
-		<atom:link href="{{ site.url }}/feed.category.xml" rel="self" type="application/rss+xml" />
+		<atom:link href="{{ site.url }}/{{ page.path }}" rel="self" type="application/rss+xml" />
 		{% for post in site.categories.miscellaneous limit:10 %}
 			<item>
 				<title>{{ post.title | xml_escape }}</title>

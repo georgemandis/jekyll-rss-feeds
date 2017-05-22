@@ -1,6 +1,8 @@
 Jekyll RSS Feed Templates
 =========================
 
+**NOTE:** If you're a fan of this project you should checkout the sister project: [jekyll-json-feeds](https://github.com/snaptortoise/jekyll-json-feeds).
+
 A few Liquid templates to use for rendering RSS feeds for your Jekyll blog.  Featuring four kinds of feeds:
 
 - **feed.xml** &mdash; Renders the 10 most recent posts.

@@ -39,6 +39,6 @@ Miscellany
     Refer to [rssboard.org/rss-autodiscovery](http://www.rssboard.org/rss-autodiscovery) for details.
 - **Validation**: You can use the W3C Validator to make sure your feeds are formatted correctly: [http://validator.w3.org/feed/](http://validator.w3.org/feed/)
 
-- If you're a [Pinboard](https://pinboard.in) user and found this repo useful, take a loot at [jekyll-pinboard](https://github.com/snaptortoise/jekyll-pinboard-plugin). It allows you to load your Pinboard bookmarks into your Jekyll site with just a couple lines.
+- If you're a [Pinboard](https://pinboard.in) user and found this repo useful, take a look at [jekyll-pinboard](https://github.com/snaptortoise/jekyll-pinboard-plugin). It allows you to load your Pinboard bookmarks into your Jekyll site with just a couple lines.
 
 - If you're looking for [JSON feed](jsonfeed.org) templates to add to your Jekyll blog please checkout the sister project: [jekyll-json-feeds](https://github.com/snaptortoise/jekyll-json-feeds).

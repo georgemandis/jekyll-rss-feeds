@@ -25,9 +25,13 @@ These templates rely on a customized version of <code>\_config.yml</code>.  The 
 	name: Your Blog's Name
 	description: A description for your blog
 	url: http://your-blog-url.example.com
+	feed_items: 10
+	feed_update_period: daily
+	feed_update_frequency: 1
 
 This makes it easy to reference the title, description and URL for your site in the feed templates using <code>{{ site.name }}</code>, <code>{{ site.description }}</code> and <code>{{ site.url }}</code>.  Even if you're not using these feed templates, you might find these variables useful when you're designing your layouts.
 
+The `feed_*` items shown above are the default. You can safely omit them.
 
 Miscellany
 -----------

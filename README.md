@@ -35,7 +35,10 @@ The `feed_*` items shown above are the default. You can safely omit them.
 
 Miscellany
 -----------
-- **Note on YAML Front Matter block**: The xml files contain an empty [YAML Front Matter](https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter) block. This is necessary because Jekyll will not process a page with Liquid unless there is a YAML block at the top of the file. Previously, this block contained the line <code>layout: none</code> but that was found to cause a separate issue for some: https://github.com/snaptortoise/jekyll-rss-feeds/commit/209b83b504fde14722491ea5d9753189566c8598
+- **Note on YAML Front Matter block**: The xml files contain an empty [YAML Front Matter](https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter) block. This is necessary because Jekyll will not process a page with Liquid unless there is a YAML block at the top of the file. 
+
+- **Note on layouts**: Previously, this block contained the line <code>layout: none</code> but that was found to cause a separate issue for some: https://github.com/snaptortoise/jekyll-rss-feeds/commit/209b83b504fde14722491ea5d9753189566c8598. However, if you've specified a *default* layout in your `_config.yml` file then you **will** most likely want to specify `layout: none` for your RSS feeds. Otherwise they will render in the default layout which is likely to be an HTML page. See this issue for reference: [https://github.com/snaptortoise/jekyll-rss-feeds/issues/32](https://github.com/snaptortoise/jekyll-rss-feeds/issues/32)
+
 - **RSS Autodiscovery**: If your template is not already setup to do so, make sure the RSS feeds are discoverable by browsers, bots, etc. by providing proper link tags to your Jekyll layout files (adapt `href` and `title` appropriately):
 
     	<link href="/blog/feed.xml" type="application/rss+xml" rel="alternate" title="Latest 10 blog posts (atom)" />
